@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#b0afae"
+    app:cardCornerRadius="30sp"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp">
+
+
+        <TextView
+            android:id="@+id/filialId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/filialId"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/filialId"
+            android:text="Брест"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="105dp"
+            android:layout_toEndOf="@+id/usdOut"
+            android:backgroundTint="@color/black"
+            android:text="Delete">
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filialId"
+            android:text="Партизанский"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usdInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/street"
+            android:text="usd in"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/usdOutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/usdInText"
+            android:text="usd out"
+            />
+
+
+        <TextView
+            android:id="@+id/usdIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/usdInText"
+            android:layout_below="@id/street"
+            android:text="2.4300"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/usdOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usdInText"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/usdOutText"
+            android:text="2.4300"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

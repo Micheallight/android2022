@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExchangeActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/filialId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="15dp"
+                android:text="12"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/city"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/filialId"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/filialId"
+                android:text="Брест"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:text="Партизанский"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/workTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/street"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:text="Пн 9 00 19 00    |Вт 9 00 19 00    |Ср 9 00 19 00    |Чт 9 00 19 00    |Пт 9 00 19 00    |Сб 10 00 15 00    |Вс        |"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usdInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/workTime"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="50dp"
+                android:text="usd in"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usdOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usdInText"
+                android:layout_marginLeft="80dp"
+                android:text="usd out"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/euroInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usdOutText"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:text="Euro In"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/euroOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/euroInText"
+                android:layout_marginLeft="80dp"
+                android:text="Euro Out"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/usdIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/workTime"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@id/usdInText"
+                android:text="2.4300"
+                android:textColor="#00cc00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usdOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usdInText"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@id/usdOutText"
+                android:text="2.4300"
+                android:textColor="#c23e1d"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/euroIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usdOutText"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/euroInText"
+                android:text="2.4300"
+                android:textColor="#00cc00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/euroOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/euroInText"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@id/euroOutText"
+                android:text="2.4300"
+                android:textColor="#c23e1d"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/rubInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/euroOutText"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:text="Rub In"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rubOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rubInText"
+                android:layout_marginLeft="80dp"
+                android:text="Rub Out"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rubIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/euroOutText"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/rubInText"
+                android:text="2.4300"
+                android:textColor="#00cc00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rubOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rubInText"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@id/rubOutText"
+                android:text="2.4300"
+                android:textColor="#c23e1d"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read all"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="20dp"
+        />
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete all"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnRead"
+        />
+    <Button
+        android:id="@+id/btnDeleteById"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete by id"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnDeleteAll"
+        />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnDeleteById"
+        />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert age"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnAdd"
+        />
+
+
+    <EditText
+        android:id="@+id/et_secondName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert second name"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/et_age"
+        />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert name"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/et_secondName"
+        />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Person"
+        app:layout_constraintBottom_toTopOf="@id/et_name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#444"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/et_persons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="all persons"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="5dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

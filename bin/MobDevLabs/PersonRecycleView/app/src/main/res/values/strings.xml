@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PersonRecycleView</string>
+    <string name="add_new">Add new!</string>
+    <string name="delete_last">Delete last!</string>
+</resources>
