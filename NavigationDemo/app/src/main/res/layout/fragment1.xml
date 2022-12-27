@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFF0F0"
+	tools:context=".fragment1">
+
+	<TextView
+		android:id="@+id/f1_textView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Фрагмент 1"
+		android:textColor="#000"
+		android:textSize="26sp"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/f1_btn1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:text="Перейти на фрагмент 2"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/f1_textView" />
+
+	<Button
+		android:id="@+id/f1_btn2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Перейти на фрагмент 3"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/f1_btn1" />
+
+	<EditText
+		android:id="@+id/f1_et_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:text="Введите имя"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/f1_btn2"
+		tools:ignore="UnknownId"
+		/>
+	<EditText
+		android:id="@+id/f1_et_sname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Введите фамилию"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/f1_et_name" />
+
+	<EditText
+		android:id="@+id/f1_et_age"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Введите возраст"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/f1_et_sname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

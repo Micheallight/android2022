@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">project1_linear</string>
+	<string name="add_new">add new</string>
+	<string name="delete_last">delete last</string>
+</resources>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/pink"
+    android:layout_marginBottom="10dp"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="date:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="23.12.2022"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="60dp"
+                />
+
+
+            <TextView
+                android:id="@+id/sellIso_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="sellIso: "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/date_tv"/>
+
+            <TextView
+                android:id="@+id/sellIso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/sellIso_tv"
+                android:text="EUR"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buyIso_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sellIso_tv"
+                android:layout_marginStart="5dp"
+                android:text="buyIso:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buyIso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sellIso"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/buyIso_tv"
+                android:text="RUB"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sellRate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buyIso_tv"
+                android:layout_marginStart="5dp"
+                android:text="sellRate:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/sellRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/sellRate_tv"
+                android:layout_below="@id/buyIso"
+                android:textColor="@color/black"
+                android:text="65.000000"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/buyRate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sellRate_tv"
+                android:layout_marginStart="5dp"
+                android:text="buyRate:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/buyRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/buyRate_tv"
+                android:layout_below="@id/sellRate"
+                android:textColor="@color/black"
+                android:text="80.000000"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/quantity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buyRate_tv"
+                android:layout_marginStart="5dp"
+                android:text="quantity:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/quantity_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/quantity_tv"
+                android:layout_below="@id/buyRate"
+                android:textColor="@color/black"
+                android:text="1"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/sellCode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantity_tv"
+                android:layout_marginStart="5dp"
+                android:text="sellCode:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/sellCode_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/sellCode_tv"
+                android:layout_below="@id/quantity_value"
+                android:textColor="@color/black"
+                android:text="978"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/buyCode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sellCode_tv"
+                android:layout_marginStart="5dp"
+                android:text="buyCode:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/buyCode_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/buyCode_tv"
+                android:layout_below="@id/sellCode_value"
+                android:textColor="@color/black"
+                android:text="643"
+                android:layout_marginStart="15dp"
+                />
+
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

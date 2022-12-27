@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:backgroundTint="#a3a6a8"
+    app:cardCornerRadius="30sp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_baseline_close_24"
+            android:background="@null">
+
+        </ImageButton>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150sp"
+            android:layout_height="154sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/honor_70" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imageView"
+            android:text="Fender\nStratocaster"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemName"
+            android:layout_alignLeft="@id/itemName"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/imageView"
+            android:text="2000 руб."
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15sp"
+
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.4"
+            android:secondaryProgressTint="#00000000"
+            android:stepSize=".1" />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

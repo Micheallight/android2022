@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">ExchangeRatesV1</string>
+	<string name="string_no_internet">It looks like there is no Internet</string>
+</resources>

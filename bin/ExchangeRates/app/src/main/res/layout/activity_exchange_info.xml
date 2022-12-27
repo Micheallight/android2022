@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    tools:context=".activities.ExchangeInfoActivity">
+
+    <TextView
+        android:id="@+id/labelInfoUsdIn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Usd in:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvInfoUsdIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/labelInfoUsdIn"
+        android:text="4.0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelInfoUsdOut"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelInfoUsdIn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Usd out:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvInfoUsdOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelInfoUsdOut"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/labelInfoUsdIn"
+        android:text="4.1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelInfoAddress"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelInfoUsdOut"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Address:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvInfoAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelInfoAddress"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/labelInfoAddress"
+        android:text="пр. Пушкина, 75"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

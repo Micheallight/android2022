@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "999903349196",
+    "project_id": "phonerecycle-86c91",
+    "storage_bucket": "phonerecycle-86c91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999903349196:android:6a791a4f60a02db6753569",
+        "android_client_info": {
+          "package_name": "com.testapp.phonerecycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999903349196-7e0vpk2f829jfbh00homhne57jrkpsd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmXTU1OuqGbdXOcjxYmTQJXcu913-F2FY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999903349196-7e0vpk2f829jfbh00homhne57jrkpsd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

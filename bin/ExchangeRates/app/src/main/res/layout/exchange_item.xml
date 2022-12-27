@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#91DEE8"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/labelUsdIn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Usd in:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvUsdIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/labelUsdIn"
+            android:text="4.0"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelUsdOut"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelUsdIn"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Usd out:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvUsdOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/labelUsdOut"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/labelUsdIn"
+            android:text="4.1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelCity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelUsdOut"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="City:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/labelCity"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/labelUsdIn"
+            android:text="Минск"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

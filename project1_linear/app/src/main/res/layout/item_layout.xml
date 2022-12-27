@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:srcCompat="@drawable/p1"
+		android:layout_centerVertical="true"
+		/>
+	<TextView
+		android:id="@+id/textViewName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		android:text="John"
+		android:textSize="18dp"
+		android:textStyle="bold"
+		android:layout_toEndOf="@+id/imageView"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="5dp"
+		android:layout_marginStart="5dp"
+		>
+
+	</TextView>
+	<TextView
+		android:id="@+id/textViewSurname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		android:text="Smith"
+		android:textSize="18dp"
+		android:textStyle="bold"
+		android:layout_toEndOf="@+id/imageView"
+		android:layout_alignLeft="@+id/textViewName"
+		android:layout_below="@+id/textViewName"
+		>
+
+	</TextView>
+
+	<TextView
+		android:id="@+id/textViewAge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		android:text="25"
+		android:textSize="18dp"
+		android:layout_toEndOf="@+id/imageView"
+		android:layout_alignLeft="@+id/textViewName"
+		android:layout_below="@+id/textViewSurname"
+		>
+
+	</TextView>
+</RelativeLayout>
